@@ -8,7 +8,7 @@ fun main() {
     var somatorio:      Int = 0
     var quantidade:     Int = 0
 
-    while (temperatura != 999) {
+    do {
         print("Digite uma temperatura ou 999 para sair: ")
         temperatura = readLine()!!.toInt()
 
@@ -17,5 +17,6 @@ fun main() {
             quantidade++ //quantidade = quantidade + 1
         }
     }
+    while (temperatura != 999)
     print("A média das temperaturas é = ${somatorio/quantidade}")
 }
